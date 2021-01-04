@@ -81,7 +81,7 @@ public class Servidor1 {
 			msg.setServico("validarcpf");
 			
 			//Criacao do socket para o servidor 1
-			Socket cliente = new Socket("localhost", 3000);
+			Socket cliente = new Socket("localhost", 5000);
 			ObjectOutputStream saida = new ObjectOutputStream(cliente.getOutputStream());
 			ObjectInputStream entrada = new ObjectInputStream(cliente.getInputStream());
 			saida.writeObject(msg);
